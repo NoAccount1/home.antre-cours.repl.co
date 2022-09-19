@@ -1,0 +1,9 @@
+# Config files from Replit
+
+**/.config
+vite.config.js
+.replit
+replit.nix
+package.json
+yarn.lock
+
