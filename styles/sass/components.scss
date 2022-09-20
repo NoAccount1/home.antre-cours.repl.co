@@ -1,0 +1,13 @@
+// Default css components
+@import "./theme";
+
+a[button] {
+  user-select: none;
+  padding: 5px;
+  text-decoration: none;
+  background-color: $s;
+  color: $os;
+  &:hover {
+    background-color: $sd;
+  }
+}

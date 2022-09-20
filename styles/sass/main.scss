@@ -1,0 +1,32 @@
+@import "./components";
+@import "./modal";
+@import "./theme";
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: sticky;
+  bottom: 1;
+  display: flex;
+  background-color: $p;
+  padding: 10px;
+
+  [separator] {
+    margin: auto;
+  }
+}
+
+#alert {
+  text-align: center;
+}
+
+#banner {
+  padding: 40px 0;
+  background-image: url("https://images-ext-1.discordapp.net/external/tPewaVnWXgW2oujTs91Owt30BjXsUw8Mgh4nT0tyGPQ/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1018886259688611960/b3b3746c0ff6583d993feba68aa767de.webp?width=397&height=397");
+}
