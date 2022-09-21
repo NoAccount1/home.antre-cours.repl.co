@@ -1,6 +1,22 @@
-// Colors are made from
-// https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=FF3D00&secondary.color=3E2723&primary.text.color=000000
+// Colors are made from Material Color Tool
 
+// https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=FFAB00&secondary.color=3E2723
+//*
+$primary: #ffab00; $p: $primary;
+$primary-dark: #c67c00; $pd: $primary-dark;
+$primary-light: #ffdd4b; $pl: $primary-light;
+
+$secondary: #3e2723; $s: $secondary;
+$secondary-dark: #1b0000; $sd: $secondary-dark;
+$secondary-light: #6a4f4b; $sl: $secondary-light;
+
+$on-primary: #000000; $op: $on-primary;
+$on-secondary: #ffffff; $os: $on-secondary;
+//*/
+
+
+// https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=FF3D00&secondary.color=3E2723&primary.text.color=000000
+/*
 $primary: #ff3d00; $p: $primary;
 $primary-dark: #c30000; $pd: $primary-dark;
 $primary-light: #ff7539; $pl: $primary-light;
@@ -11,3 +27,4 @@ $secondary-light: #6a4f4b; $sl: $secondary-light;
 
 $on-primary: #000000; $op: $on-primary;
 $on-secondary: #ffffff; $os: $on-secondary;
+//*/

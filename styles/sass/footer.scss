@@ -1,0 +1,13 @@
+@import "./theme";
+
+footer {
+  flex-shrink: 0;
+  padding: 20px;
+  background-color: $pl;
+  a {
+    color: $op;
+    &:hover {
+      color: lighten($op, 30);
+    }
+  }
+}

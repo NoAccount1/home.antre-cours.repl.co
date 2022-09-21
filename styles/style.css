@@ -1,9 +1,54 @@
+/*
+$primary: #ff3d00; $p: $primary;
+$primary-dark: #c30000; $pd: $primary-dark;
+$primary-light: #ff7539; $pl: $primary-light;
+
+$secondary: #3e2723; $s: $secondary;
+$secondary-dark: #1b0000; $sd: $secondary-dark;
+$secondary-light: #6a4f4b; $sl: $secondary-light;
+
+$on-primary: #000000; $op: $on-primary;
+$on-secondary: #ffffff; $os: $on-secondary;
+//*/
+footer {
+  flex-shrink: 0;
+  padding: 20px;
+  background-color: #ffdd4b;
+}
+footer a {
+  color: #000000;
+}
+footer a:hover {
+  color: #4d4d4d;
+}
+
+/*
+$primary: #ff3d00; $p: $primary;
+$primary-dark: #c30000; $pd: $primary-dark;
+$primary-light: #ff7539; $pl: $primary-light;
+
+$secondary: #3e2723; $s: $secondary;
+$secondary-dark: #1b0000; $sd: $secondary-dark;
+$secondary-light: #6a4f4b; $sl: $secondary-light;
+
+$on-primary: #000000; $op: $on-primary;
+$on-secondary: #ffffff; $os: $on-secondary;
+//*/
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  color: #ffffff;
+}
+
 a[button] {
   user-select: none;
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
   background-color: #3e2723;
   color: #ffffff;
+  border-radius: 5px;
 }
 a[button]:hover {
   background-color: #1b0000;
@@ -18,46 +63,68 @@ a[button]:hover {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
 #modal #modal-content {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  min-width: 300px;
+  max-width: 30%;
+  height: 150px;
 }
-#modal #close {
+#modal span {
   user-select: none;
   color: #aaa;
-  float: right;
+  justify-self: end;
   font-size: 28px;
   font-weight: bold;
 }
-#modal #close:hover, #modal #close:focus {
+#modal span:hover, #modal span:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
+/*
+$primary: #ff3d00; $p: $primary;
+$primary-dark: #c30000; $pd: $primary-dark;
+$primary-light: #ff7539; $pl: $primary-light;
+
+$secondary: #3e2723; $s: $secondary;
+$secondary-dark: #1b0000; $sd: $secondary-dark;
+$secondary-light: #6a4f4b; $sl: $secondary-light;
+
+$on-primary: #000000; $op: $on-primary;
+$on-secondary: #ffffff; $os: $on-secondary;
+//*/
 html, body {
+  font-family: Arial;
   height: 100%;
   width: 100%;
-  font-family: Arial;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
   position: sticky;
   bottom: 1;
   display: flex;
-  background-color: #ff3d00;
+  background-color: #ffab00;
   padding: 10px;
 }
 nav [separator] {
   margin: auto;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 #alert {
