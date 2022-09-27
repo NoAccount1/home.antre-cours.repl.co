@@ -3,6 +3,7 @@
 #modal {
   display: block;
   position: fixed;
+  text-align: center;
   z-index: 1;
   left: 0;
   top: 0;
@@ -34,5 +35,8 @@
       text-decoration: none;
       cursor: pointer;
     }
+  }
+  h1 {
+    justify-self: center;
   }
 }

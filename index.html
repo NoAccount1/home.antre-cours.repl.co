@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>L'Antre-Cours</title>
   <!-- style links -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <!-- Others imports -->
   <link href="assets/icon.png" rel="icon" type="image/x-icon">
@@ -15,29 +15,32 @@
 <body>
 
   <header>
-    <nav>
-      <a button href="./index.htm&l"><i class="fa-solid fa-house"></i>Accueil</a>
-      <span separator></span>
-      <a button href="./planning.html">Planning</a>
-    </nav>
-    <div id="banner"></div>
+    <img id="icon" src="./assets/icon.png" />
+    <span id="title">L'Antre-Cours</span>
   </header>
 
   <main>
-    <div id="modal" id="alert">
-      <div id="modal-content">
-        <span></span>
-        <h1>Site en<br />construction</h1>
-        <span id="close">&times;</span>
-      </div>
-    </div>
+    <h1>Qui sommes-nous ?</h1>
   </main>
 
   <footer>
-    <a href="https://github.com/NoAccount1/home.antre-cours.repl.co">Github</a>
+    <a href="./team.html"><i class="fa-solid fa-people-group"></i> Equipe</a>
+    <a id="github-link" href="https://github.com/NoAccount1/home.antre-cours.repl.co"><i class="fa-brands fa-github"></i> Github</a>
   </footer>
 
-  <script src="script.js"></script>
+  <div id="modal">
+    <div id="modal-content">
+      <span></span>
+      <h1>Site en<br />construction</h1>
+      <span id="close">&times;</span>
+    </div>
+  </div>
+  
+  <div id="github">
+    
+  </div>
+
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>

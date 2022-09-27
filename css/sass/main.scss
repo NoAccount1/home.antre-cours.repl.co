@@ -1,12 +1,10 @@
-@import "./footer";
-
-@import "./components";
-
 @import "./modal";
 @import "./theme";
+@import "./header";
+@import "./footer";
 
 html, body {
-font-family: Arial;
+  font-family: Arial;
   height: 100%;
   width: 100%;
   padding: 0;
@@ -16,27 +14,9 @@ font-family: Arial;
   flex-direction: column;
 }
 
-nav {
-  position: sticky;
-  bottom: 1;
-  display: flex;
-  background-color: $p;
-  padding: 10px;
-
-  [separator] {
-    margin: auto;
-  }
-}
-
 main {
   flex: 1 0 auto;
-}
-
-#alert {
-  text-align: center;
-}
-
-#banner {
-  padding: 40px 0;
-  background-image: url("https://images-ext-1.discordapp.net/external/tPewaVnWXgW2oujTs91Owt30BjXsUw8Mgh4nT0tyGPQ/%3Fsize%3D2048/https/cdn.discordapp.com/icons/1018886259688611960/b3b3746c0ff6583d993feba68aa767de.webp?width=397&height=397");
+  h1 {
+    text-align: center;
+  }
 }
