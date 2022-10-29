@@ -1,46 +1,27 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>L'Antre-Cours</title>
-  <!-- style links -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <!-- Others imports -->
-  <link href="assets/icon.png" rel="icon" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting</title>
 </head>
 
 <body>
-
-  <header>
-    <img id="icon" src="./assets/icon.png" />
-    <span id="title">L'Antre-Cours</span>
-  </header>
-
-  <main>
-    <h1>Qui sommes-nous ?</h1>
-  </main>
-
-  <footer>
-    <a href="./team.html"><i class="fa-solid fa-people-group"></i> Equipe</a>
-    <a id="github-link" href="https://github.com/NoAccount1/home.antre-cours.repl.co"><i class="fa-brands fa-github"></i> Github</a>
-  </footer>
-
-  <div id="modal">
-    <div id="modal-content">
-      <span></span>
-      <h1>Site en<br />construction</h1>
-      <span id="close">&times;</span>
-    </div>
-  </div>
-  
-  <div id="github">
-    
-  </div>
-
-  <script src="./scripts/script.js"></script>
+  <script>
+const width = Math.max(
+  window.innerWidth,
+  window.outerWidth,
+);
+var a = document.createElement('A');
+var filePath = width > 380 ? './view/pc.pdf' : './view/mobile.pdf';
+a.href = filePath;
+a.download = filePath.substr(filePath.lastIndexOf('/') + 1);
+document.body.appendChild(a);
+a.click();
+document.body.removeChild(a);
+document.title = "L'Antre Cours"
+  </script>
 </body>
 
 </html>

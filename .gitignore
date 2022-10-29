@@ -1,10 +1,1 @@
-# Config files from Replit
-
-**/.config
-**/node_modules
-vite.config.js
-.replit
-replit.nix
-package.json
-yarn.lock
-
+**/.vscode

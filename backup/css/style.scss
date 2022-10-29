@@ -1,0 +1,21 @@
+@import "sass/modal";
+@import "sass/theme";
+@import "sass/header";
+@import "sass/footer";
+@import "sass/main";
+
+
+@font-face {
+  font-family: gothic-e;
+  src: url(../fonts/gothice.ttf);
+}
+html, body {
+  font-family: Arial;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}

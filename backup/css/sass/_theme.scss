@@ -1,0 +1,31 @@
+// Colors are made from Material Color Tool
+
+// https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=FFAB00&secondary.color=3E2723
+$primary: #ffab00;         $p: $primary;
+$primary-dark: #c67c00;    $pd: $primary-dark;
+$primary-light: #ffdd4b;   $pl: $primary-light;
+
+$secondary: #3e2723;       $s: $secondary;
+$secondary-dark: #1b0000;  $sd: $secondary-dark;
+$secondary-light: #6a4f4b; $sl: $secondary-light;
+
+/* Default theme */
+$on-primary: #000000;    $op: $on-primary;
+$on-secondary: #ffffff;  $os: $on-secondary;
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  $on-primary: #000000;    $op: $on-primary;
+  $on-secondary: #ffffff;  $os: $on-secondary;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  $on-primary: #ffffff;    $op: $on-primary;
+  $on-secondary: #000000;  $os: $on-secondary;
+}
+
+body {
+  background-color: $op;
+  color: $os;
+}
